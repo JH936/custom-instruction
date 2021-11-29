@@ -54,7 +54,7 @@ export default {
       console.log('submit!')
     },
     onSearch() {
-      if(this.sizeForm.name){
+      if (this.sizeForm.name) {
         console.log(this.sizeForm.name)
         this.sizeForm.search = this.sizeForm.name
       }

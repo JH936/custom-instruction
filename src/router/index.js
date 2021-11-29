@@ -54,6 +54,17 @@ export const constantRoutes = [
       meta: { title: 'Dashboard', icon: 'dashboard' }
     }]
   },
+  {
+    path: '/dialog',
+    component: Layout,
+    redirect: '/dialog',
+    children: [{
+      path: 'dialog',
+      name: 'dialog',
+      component: () => import('@/views/dialog/index'),
+      meta: { title: 'dialog', icon: 'dashboard' }
+    }]
+  },
 
   {
     path: '/example',

@@ -16,6 +16,15 @@ import '@/icons' // icon
 import '@/permission' // permission control
 import directives from './utils/directive' // 引入自定义指令文件
 Vue.use(directives)
+
+// 导入全局弹框
+import MessageDialogIndex from '@/views/dialog/file/index.js'
+Vue.use(MessageDialogIndex)
+import MessageDialogIndexMsg from '@/views/dialog/file/indexMsg'
+Vue.use(MessageDialogIndexMsg)
+
+import MyDialog from '@/views/MyDialog/index' // 路径
+Vue.prototype.$MyDialog = MyDialog
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
